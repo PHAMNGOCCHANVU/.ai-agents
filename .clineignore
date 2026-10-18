@@ -1,0 +1,100 @@
+# ==============================================================================
+# CLINE & ROO CODE IGNORE CONFIGURATION
+# Đồng bộ với .antigravityignore để ngăn Agent đọc file rác và quét sai thư mục
+# ==============================================================================
+
+# Package Dependencies
+node_modules/
+vendor/
+.venv/
+venv/
+env/
+__pycache__/
+target/
+.gradle/
+Pods/
+
+# Lockfiles (Tránh tràn Context Window)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+composer.lock
+Cargo.lock
+poetry.lock
+Pipfile.lock
+bun.lockb
+
+# Build Outputs & Source Maps
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+.turbo/
+*.map
+*.min.js
+*.min.css
+*.tsbuildinfo
+
+# Binaries & Executables
+*.exe
+*.dll
+*.so
+*.dylib
+*.class
+*.jar
+
+# Dữ liệu lớn & Database Dumps
+*.sql
+*.dump
+*.sqlite3
+*.db
+*.csv
+*.tsv
+*.parquet
+*.jsonl
+datasets/
+data/
+
+# Tệp đa phương tiện & Nén
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.ico
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.woff
+*.woff2
+*.ttf
+*.pdf
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Logs, Cache & Test Results
+logs/
+*.log
+coverage/
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+playwright-report/
+test-results/
+
+# Hệ thống & Cấu hình nhạy cảm
+.git/
+.DS_Store
+Thumbs.db
+.idea/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
